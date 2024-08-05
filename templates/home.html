@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahman Careers</title>
+  <style>
+    h1 {
+      font-size:40px;
+      font-family:Roboto;
+      font-weight: normal;
+      color: rgb(100,100,100,);
+      text-align: center;
+
+    }
+    img{
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+    }
+    h2 {
+      font family: Roboto;
+      font-size: 32px;
+      color: rgb(100, 100, 100);
+      text-align: center;   
+    }
+    .bodytext{
+      font-family: Roboto;
+      color: rgb(80, 80, 80);;
+    }
+    #container{
+      max-width: 720px;
+      margin: 0 auto 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+  <h1>Abdul Rahman careers</h1>
+  <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGNhcmVlcnxlbnwwfHwwfHx8MA%3D%3D">
+  <h2>About Rahman</h2>
+  <p class="bodytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus cursus vehicula. Maecenas vitae pharetra massa, non malesuada ante. Praesent et lorem purus. Curabitur eget accumsan augue, finibus bibendum ex. Fusce euismod turpis id ex porttitor, nec pulvinar lacus pretium. Nunc sed vestibulum justo. Suspendisse viverra sodales libero, eget tincidunt lacus congue vitae. Pellentesque a lectus ultricies, iaculis urna non, pellentesque odio. Nulla id elit nec purus dignissim volutpat ac non mauris. Proin quis purus posuere, viverra libero et, ultrices mauris. Aliquam lacinia efficitur vulputate. Aenean augue magna, consequat sit amet justo dignissim, vehicula accumsan augue. Donec elementum sit amet mauris vel molestie</p>
+  <h2 class="text-center mt-2 mb-4">Open position</h2>
+  <div>
+    {% for job in jobs %}
+    <div>
+      <h4>{{job['title']}}</h4>>
+      <div>loction: {{job['location']}}</div>
+    </div>
+    {% end for %}
+  </div>
+    <div class="text-center">
+  <button class="btn btn-primary btn-lg">Contact Us</button>
+      <p class="mt-4">Copyright 2024, Rahman</p>
+    </div>
+  </div>
+</body>
+</html>
