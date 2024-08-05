@@ -1,2 +1,2 @@
-# jovin-careers-website
-A careers website for jovian
+# Rahman-careers-website
+A careers website for Rahman 
